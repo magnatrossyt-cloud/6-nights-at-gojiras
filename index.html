@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Nights at Gojira's</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="public/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div id="night-info">
+                <h1>Night <span id="current-night">1</span> / 6</h1>
+                <div id="timer">6:00 AM</div>
+                <div id="weather-display"></div>
+            </div>
+            <div id="stats">
+                <p>Posters Removed: <span id="poster-count">0</span>/10</p>
+                <p>Gojira Distance: <span id="gojira-distance">--</span></p>
+                <p>Threat Level: <span id="threat-level">LOW</span></p>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="ui-layer">
+            <div id="posters-container"></div>
+            <div id="gojira-indicator"></div>
+        </div>
+    </div>
+
+    <script src="js/weather.js"></script>
+    <script src="js/gojira.js"></script>
+    <script src="js/poster.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
